@@ -1,0 +1,17 @@
+.title h1 {
+    text-align: center;
+}
+
+.input-container {
+    text-align: center;
+
+}
+
+.input-container input {
+    margin-top: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
