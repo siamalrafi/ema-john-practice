@@ -3,7 +3,6 @@ import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWith
 import app from '../../Firebase/firebase.init';
 
 export const AuthContext = createContext();
-
 const auth = getAuth(app);
 
 
@@ -35,11 +34,7 @@ const UserContext = ({ children }) => {
         })
         return () => unSubscibe()
 
-
     }, [])
-
-
-
 
 
     const authInfo = { user, loading, createUser, signIn, logOut }
