@@ -5,14 +5,11 @@ import { AuthContext } from '../Context/UserContext';
 import './Header.css';
 
 const Header = () => {
-
     const { user, logOut } = useContext(AuthContext);
-
 
     const handleLogOut = () => {
         logOut()
     }
-
 
     return (
         <nav className='header'>
@@ -32,7 +29,6 @@ const Header = () => {
                             <Link to='/login'>Login</Link>
                             <Link to='/register'>Sign Up</Link>
                         </>
-
                 }
                 <span> {user?.email}</span>
             </div>
