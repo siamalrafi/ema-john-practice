@@ -1,15 +1,7 @@
-import { signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useContext } from 'react';
-import { Link, useLoaderData, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Context/UserContext';
 import './Login.css';
-import { getAuth } from "firebase/auth";
-import app from '../../Firebase/firebase.init';
-
-
-
-
-const auth = getAuth(app);
 
 
 const Login = () => {
@@ -17,7 +9,6 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
-
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -38,7 +29,6 @@ const Login = () => {
             });
 
     }
-
 
 
     return (

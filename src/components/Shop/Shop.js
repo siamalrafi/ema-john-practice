@@ -11,7 +11,6 @@ const Shop = () => {
     const { user } = useContext(AuthContext);
     // console.log(user.Name);
 
-
     const products = useLoaderData();
     const [cart, setCart] = useState([]);
 
